@@ -113,15 +113,3 @@ You can customize your setup by modifying or adding new Lua files in the appropr
 ## 📝 License
 
 This configuration is licensed under the [Apache-2.0 License](LICENSE).([GitHub][5])
-
----
-
-Feel free to explore and customize this setup to fit your development needs. If you have any questions or suggestions, don't hesitate to reach out!
-
----
-
-[1]: https://github.com/LazyVim?utm_source=chatgpt.com "LazyVim - GitHub"
-[2]: https://github.com/neitherWorks/LazyVimSetup/blob/main/README.md?utm_source=chatgpt.com "LazyVimSetup/README.md at main · neitherWorks/LazyVimSetup - GitHub"
-[3]: https://github.com/LazyVim/LazyVim?utm_source=chatgpt.com "GitHub - LazyVim/LazyVim: Neovim config for the lazy"
-[4]: https://github.com/neitherWorks/LazyVimSetup?utm_source=chatgpt.com "GitHub - neitherWorks/LazyVimSetup: Neovim config for the lazy"
-[5]: https://github.com/cerebrium/lazyVimSetup?utm_source=chatgpt.com "GitHub - cerebrium/lazyVimSetup: lazy vim config"
