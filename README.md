@@ -1,3 +1,127 @@
-# 💤 LazyVim
+![image](https://github.com/user-attachments/assets/ac0caa09-c1a1-4436-a23b-262dfa54eee4)
 
-This is my custom LazyVim setup that I use in my daily workflow. (Here For Backup)
+
+# LazyVimSetup
+
+This repository contains my personal configuration for LazyVim, a Neovim setup powered by [lazy.nvim](https://github.com/folke/lazy.nvim), designed to streamline and enhance my daily development workflow.([GitHub][1])
+
+---
+
+## 🚀 Features
+
+* **Modular Configuration**: Easily extendable and customizable setup using `lazy.nvim`.
+* **Optimized Performance**: Blazing fast startup time and responsive editing experience.
+* **Pre-configured Plugins**: Comes with a curated set of plugins ready to use.
+* **Sane Defaults**: Includes sensible default settings for options, autocmds, and keymaps.([GitHub][1], [GitHub][2], [GitHub][3])
+
+---
+
+## 📦 Requirements
+
+* **Neovim**: Version 0.9.0 or higher (built with LuaJIT).
+* **Git**: Version 2.19.0 or higher (for partial clones support).
+* **Nerd Font**: Optional, but recommended for better UI.
+* **C Compiler**: Required for `nvim-treesitter`.([GitHub][2], [GitHub][4])
+
+---
+
+## ⚙️ Installation
+
+### 1. Backup Existing Configuration
+
+Before installing, it's advisable to back up your current Neovim configuration:([GitHub][2])
+
+```bash
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+```
+
+
+
+### 2. Clone the Repository
+
+Clone this repository into your Neovim configuration directory:([GitHub][1])
+
+```bash
+git clone https://github.com/iammihirsig/LazyVimSetup ~/.config/nvim
+```
+
+
+
+### 3. Remove Git Metadata
+
+To prevent accidental commits or pushes, remove the `.git` directory:
+
+```bash
+rm -rf ~/.config/nvim/.git
+```
+
+
+
+### 4. Launch Neovim
+
+Open Neovim to initialize the configuration:([GitHub][3])
+
+```bash
+nvim
+```
+
+
+
+LazyVim will automatically install the necessary plugins on the first launch.([GitHub][3])
+
+---
+
+## 🧩 Configuration
+
+The configuration is organized as follows:
+
+```
+~/.config/nvim
+├── init.lua
+└── lua
+    ├── config
+    │   ├── autocmds.lua
+    │   ├── keymaps.lua
+    │   ├── lazy.lua
+    │   └── options.lua
+    └── plugins
+        ├── spec1.lua
+        ├── spec2.lua
+        └── ...
+```
+
+
+
+* **`init.lua`**: Main entry point for the configuration.
+* **`lua/config/`**: Contains core configuration files for options, keymaps, and autocommands.
+* **`lua/plugins/`**: Houses individual plugin specifications.([GitHub][4], [GitHub][2])
+
+You can customize your setup by modifying or adding new Lua files in the appropriate directories.
+
+---
+
+## 📚 Resources
+
+* **LazyVim Documentation**: For detailed information and advanced configurations, refer to the [LazyVim documentation](https://lazyvim.github.io/).
+* **Starter Template**: Explore the official [LazyVim starter template](https://github.com/LazyVim/starter) for a clean slate setup.
+* **Walkthrough Video**: Watch a comprehensive walkthrough by [@elijahmanor](https://twitter.com/elijahmanor) to get started.
+* **Book**: Read *LazyVim for Ambitious Developers* by [@dusty-phillips](https://github.com/dusty-phillips) for an in-depth guide.([GitHub][3])
+
+---
+
+## 📝 License
+
+This configuration is licensed under the [Apache-2.0 License](LICENSE).([GitHub][5])
+
+---
+
+Feel free to explore and customize this setup to fit your development needs. If you have any questions or suggestions, don't hesitate to reach out!
+
+---
+
+[1]: https://github.com/LazyVim?utm_source=chatgpt.com "LazyVim - GitHub"
+[2]: https://github.com/neitherWorks/LazyVimSetup/blob/main/README.md?utm_source=chatgpt.com "LazyVimSetup/README.md at main · neitherWorks/LazyVimSetup - GitHub"
+[3]: https://github.com/LazyVim/LazyVim?utm_source=chatgpt.com "GitHub - LazyVim/LazyVim: Neovim config for the lazy"
+[4]: https://github.com/neitherWorks/LazyVimSetup?utm_source=chatgpt.com "GitHub - neitherWorks/LazyVimSetup: Neovim config for the lazy"
+[5]: https://github.com/cerebrium/lazyVimSetup?utm_source=chatgpt.com "GitHub - cerebrium/lazyVimSetup: lazy vim config"
